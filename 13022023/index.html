@@ -14,17 +14,15 @@
     <section class="principal">
         <form action="/" id="form" method="post" class="form-signin">
             <h1 class="h3 mb-3 font-weight-normal">Acesso ao sistema</h1>
-            <label for="inputLogin" class="sr-only">Login</label>
-            <input type="text" id="inputLogin" class="form-control" placeholder="Login" required autofocus>
-            <label for="inputPassword" class="sr-only">Senha</label>
+            <input type="email" id="inputLogin" class="form-control" placeholder="Login" required autofocus>
             <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-            <div align="center">
-                <button type="submit" class="btn btn-lg btn-primary btn-block" id="enviar">Entrar</button> <button class="btn btn-primary btn-lg" id="limpar">Limpar</button>
-            </div>
-            <p class="mt-5 mb-3 text-muted">&copy; Desde 2017</p>
+            <button type="submit" class="btn btn-lg btn-primary btn-block" id="enviar">Entrar</button>
         </form>
+        <button class="btn btn-lg btn-primary btn-block" id="limpar">Limpar</button>
+        <p class="mt-5 mb-3 text-muted">&copy; Desde 2017</p>
+        <br>
         <hr>
-          <div id="result" style="font-size: larger;" align="center"></div>
+        <div id="result" style="font-size: larger;" align="center"></div>
     </section>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.js"></script>

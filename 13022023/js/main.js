@@ -3,22 +3,18 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
 
     //Selecionando os inputs do html
-    const inputNome = e.target.querySelector('#nome');
-    const inputIdade = e.target.querySelector('#idade');
+    const inputLogin = e.target.querySelector('#inputLogin');
+    const inputPassword = e.target.querySelector('#inputPassword');
     const div = document.querySelector('#result');
     
     //Pegando os valores deles
-    const nome = String(inputNome.value);
-    const idade = Number(inputIdade.value);
+    const email = String(inputLogin.value);
+    const senha = Number(inputPassword.value);
 
-    if(idade <= 0){
-        const msg = 'Digite uma idade valida!!';
-        div.innerHTML = msg;
-    }
-    else{
-        const msg = `Olá ${nome}, Legal!! você tem ${idade} anos!!`;
-        div.innerHTML = msg;
-    }
+    const msg = `Olá seja bem vindo de volta!! <p class="mt-5 mb-3 text-muted">${email}</p>`;
+    console.log(`Sua senha é ${senha} hihihi`);
+    div.innerHTML = msg;
+
 });
 
 const limpar = document.querySelector('#limpar');
